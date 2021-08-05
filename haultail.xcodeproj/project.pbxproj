@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0583DF8A26BC334200953237 /* UIImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0583DF8926BC334200953237 /* UIImageView+URL.swift */; };
 		05E23D8726BAE2C100B6008B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E23D8626BAE2C100B6008B /* AppDelegate.swift */; };
 		05E23D8926BAE2C100B6008B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E23D8826BAE2C100B6008B /* SceneDelegate.swift */; };
 		05E23D8B26BAE2C100B6008B /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E23D8A26BAE2C100B6008B /* PostsViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0583DF8926BC334200953237 /* UIImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+URL.swift"; sourceTree = "<group>"; };
 		05E23D8326BAE2C100B6008B /* haultail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haultail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E23D8626BAE2C100B6008B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E23D8826BAE2C100B6008B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0583DF8B26BC349E00953237 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				0583DF8926BC334200953237 /* UIImageView+URL.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
 		05E23D7A26BAE2C100B6008B = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		05E23D8526BAE2C100B6008B /* haultail */ = {
 			isa = PBXGroup;
 			children = (
+				0583DF8B26BC349E00953237 /* Controls */,
 				05E23D9C26BAE51D00B6008B /* Settings */,
 				05E23D9F26BAE64800B6008B /* Models */,
 				05E23DA026BAE67700B6008B /* ViewControllers */,
@@ -264,6 +275,7 @@
 				05E23D8B26BAE2C100B6008B /* PostsViewController.swift in Sources */,
 				05E23DA426BAE92E00B6008B /* PostDisplayable.swift in Sources */,
 				05E23D8726BAE2C100B6008B /* AppDelegate.swift in Sources */,
+				0583DF8A26BC334200953237 /* UIImageView+URL.swift in Sources */,
 				05E23D9E26BAE54500B6008B /* Settings.swift in Sources */,
 				05E23DAB26BB13B300B6008B /* BaseViewController.swift in Sources */,
 				05E23D8926BAE2C100B6008B /* SceneDelegate.swift in Sources */,

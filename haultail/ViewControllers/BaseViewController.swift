@@ -18,7 +18,7 @@ class BaseViewController: UIViewController {
 
     func initBackButton() {
         let button = UIButton.init(type: .custom)
-        button.setImage(UIImage(named: "arrow-left"), for: UIControl.State.normal)
+        button.setImage(UIImage(named: "arrow-left-bold"), for: UIControl.State.normal)
         button.addTarget(self, action: #selector(goBack), for: UIControl.Event.touchUpInside)
         button.frame = CGRect(x: 0, y: 0, width: 20, height: 11)
         let barButton = UIBarButtonItem(customView: button)

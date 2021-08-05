@@ -8,9 +8,10 @@
 import UIKit
 import Alamofire
 
-class PostsViewController: UIViewController {
+class PostsViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelStamp: UILabel!
     
     var activityIndicator: UIActivityIndicatorView!
     
@@ -30,6 +31,7 @@ class PostsViewController: UIViewController {
     
     func initControls() {
         self.title = Settings.title
+        self.labelStamp.text = Settings.stamp
         loadData()
     }
     
@@ -107,7 +109,12 @@ extension PostsViewController: UITableViewDataSource {
         let item = data[indexPath.row]
         cell.labelTitle.text = item.labelTitle
         cell.labelDate.text = item.labelDate
-        cell.oddCell(odd: indexPath.row % 2 == 0)
+        print(item.labelTitle)
+        print(item.labelImage)
+        cell.imageTitleView.image = nil
+        if let url = URL(string: item.labelImage) {
+            cell.imageTitleView.load(url: url)
+        }
         return cell
     }
  
@@ -117,7 +124,9 @@ extension PostsViewController: UITableViewDataSource {
             guard let vc = segue.destination as? WebViewController else {
               return
             }
-            vc.titleText = item.labelTitle
+            vc.textDate = item.labelDate
+            vc.textTitle = item.labelTitle
+            vc.imageUrl = item.labelImage
             vc.content = item.labelContent
         }
     }
@@ -136,7 +145,7 @@ extension PostsViewController: UITableViewDelegate {
 }
 
 // MARK: - load more data on scroll
-
+/*
 extension PostsViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if (data.count == 0) {
@@ -156,3 +165,4 @@ extension PostsViewController: UIScrollViewDelegate {
         
     }
 }
+*/
