@@ -53,7 +53,6 @@ class PostsViewController: UIViewController {
     
     func posts(completionHandler: @escaping([Post]) -> Void) {
         let url = "\(Settings.baseUrl)/posts/\(step)/\(currentStart)"
-        // print("T ' \(step) \(currentStart)")
         AF.request(url, method: .get, encoding:  URLEncoding.queryString).validate()
             .responseDecodable(of: [Post].self) { response in
                 guard let posts = response.value else { return }
