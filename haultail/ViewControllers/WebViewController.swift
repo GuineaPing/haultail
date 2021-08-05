@@ -24,7 +24,6 @@ class WebViewController: BaseViewController {
     // MARK: - init
     
     func initContent() {
-        webView.layoutMargins = UIEdgeInsets(top: 0, left: 25, bottom: 0, right: 25)
         webView.loadHTMLString("<meta name=\"viewport\" content=\"width=device-width, shrink-to-fit=YES\"> " + content, baseURL: nil)
     }
 
