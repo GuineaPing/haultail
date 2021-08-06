@@ -29,8 +29,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Date" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ag-Tu-5Jh">
-                                                    <rect key="frame" x="180" y="44" width="214" height="19"/>
-                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                                    <rect key="frame" x="180" y="44" width="214" height="23"/>
+                                                    <fontDescription key="fontDescription" name="NotoSansKannada-Regular" family="Noto Sans Kannada" pointSize="17"/>
                                                     <color key="textColor" name="color-grey"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -42,9 +42,9 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMR-tp-Xb1">
-                                                    <rect key="frame" x="180" y="71" width="194" height="21.5"/>
-                                                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="19"/>
-                                                    <color key="textColor" name="color-black"/>
+                                                    <rect key="frame" x="180" y="68" width="194" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                                    <color key="textColor" name="color-grey-dark"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="5qF-hl-9K1" userLabel="Image View ">
@@ -64,7 +64,7 @@
                                                 <constraint firstItem="5qF-hl-9K1" firstAttribute="top" secondItem="78d-SN-MZZ" secondAttribute="top" constant="38" id="IzL-lA-Eft"/>
                                                 <constraint firstItem="dB6-de-E6I" firstAttribute="top" secondItem="78d-SN-MZZ" secondAttribute="top" id="KBS-Ks-Hk5"/>
                                                 <constraint firstAttribute="trailing" secondItem="dB6-de-E6I" secondAttribute="trailing" id="O9n-WB-cOi"/>
-                                                <constraint firstItem="eMR-tp-Xb1" firstAttribute="top" secondItem="7Ag-Tu-5Jh" secondAttribute="bottom" constant="8" id="S1G-Q4-cJw"/>
+                                                <constraint firstItem="eMR-tp-Xb1" firstAttribute="top" secondItem="7Ag-Tu-5Jh" secondAttribute="bottom" constant="1" id="S1G-Q4-cJw"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="eMR-tp-Xb1" secondAttribute="bottom" constant="16" id="jpD-qN-zaF"/>
                                                 <constraint firstAttribute="trailing" secondItem="7Ag-Tu-5Jh" secondAttribute="trailing" constant="20" id="ofe-ey-a88"/>
                                                 <constraint firstItem="7Ag-Tu-5Jh" firstAttribute="top" secondItem="dB6-de-E6I" secondAttribute="bottom" constant="22" id="t2T-Ze-OQ0"/>
@@ -85,8 +85,8 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARI-Wi-0dA" userLabel="Label Stamp">
-                                <rect key="frame" x="35" y="841.5" width="55.5" height="20.5"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <rect key="frame" x="35" y="842.5" width="57.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                 <color key="textColor" name="color-green-poison"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -129,8 +129,8 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXa-4p-0dQ" userLabel="Label Stamp">
-                                <rect key="frame" x="35" y="841" width="56" height="21"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <rect key="frame" x="35" y="842.5" width="57.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="16"/>
                                 <color key="textColor" name="color-green-poison"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -178,17 +178,17 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="color-black">
-            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="color-blue-separator">
-            <color red="0.10980392156862745" green="0.6470588235294118" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10999999940395355" green="0.6470000147819519" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-green-poison">
-            <color red="0.48627450980392156" green="0.93725490196078431" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.48600000143051147" green="0.93699997663497925" blue="0.20399999618530273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-grey">
             <color red="0.43900001049041748" green="0.43900001049041748" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="color-grey-dark">
+            <color red="0.31400001049041748" green="0.31400001049041748" blue="0.31400001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="color-white">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

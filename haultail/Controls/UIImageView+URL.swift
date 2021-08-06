@@ -5,6 +5,8 @@
 //  Created by Eugene Lysenko on 05.08.2021.
 //
 
+// load UIImageView with url
+
 import UIKit
 
 extension UIImageView {

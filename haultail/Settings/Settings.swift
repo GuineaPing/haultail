@@ -11,5 +11,5 @@ struct Settings {
     static let title: String = "LATEST NEWS"
     static let baseUrl: String = "https://www.haultail.com/wp-json/haultail_news/v1"
     static let postStep: Int = 10
-    static let stamp: String = "2.1.64 a"
+    static let stamp: String = "2.1.64 a" // just for fun
  }

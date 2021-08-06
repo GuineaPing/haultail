@@ -144,25 +144,3 @@ extension PostsViewController: UITableViewDelegate {
     
 }
 
-// MARK: - load more data on scroll
-/*
-extension PostsViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (data.count == 0) {
-            return
-        }
-        let visibleRows: Array = tableView.indexPathsForVisibleRows!
-        var maxRow: Int = 0;
-        for indexPath:IndexPath in visibleRows {
-            if (indexPath.row > maxRow) {
-                maxRow = indexPath.row
-            }
-        }
-        currentIndex = min(maxRow + 1, data.count)
-        if (maxRow >= data.count - step) {
-            loadMoreData()
-        }
-        
-    }
-}
-*/
